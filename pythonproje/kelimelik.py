@@ -1,6 +1,6 @@
 import random
 
-# Kelime listesi dosyası
+
 kelime_dosyasi = "kelimeler.txt"
 
 def kelime_yukle(kelime_dosyasi):
@@ -19,14 +19,14 @@ def gizli_kelime_olustur(kelime):
     return "_" * len(kelime)
 
 def kelime_bulmaca():
-    # Kelime listesi yükle
+   
     kelimeler = kelime_yukle(kelime_dosyasi)
 
-    # Oyun parametrelerini belirle
+  
     tahmin_hakki = int(input("Tahmin hakkı: "))
     kelime_uzunlugu = int(input("Kelime uzunluğu: "))
 
-    # Seçilen uzunlukta rastgele bir kelime seç
+    
     kelime = ""
     while len(kelime) != kelime_uzunlugu:
         kelime = kelime_sec(kelimeler)
